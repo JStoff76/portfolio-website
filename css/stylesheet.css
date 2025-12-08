@@ -1,4 +1,14 @@
 /* Basic reset */
+.profile-photo {
+  position: fixed;      /* sticks to the viewport */
+  top: 1rem;            /* space from the top */
+  left: 1rem;           /* space from the left */
+  width: 120px;          /* make it smaller */
+  height: 120px;         /* keep it square */
+  object-fit: cover;    /* crop nicely if not square */
+  border-radius: 50%;   /* make it circular (optional) */
+  z-index: 1000;        /* keep it above other stuff */
+}
 * {
   box-sizing: border-box;
 }
@@ -55,11 +65,14 @@ a:focus {
   background: #0b3d91;
   color: #ffffff;
   padding: 1rem 0 1.5rem;
+  text-align: center;
 }
+
 
 .site-header h1 {
   margin: 0;
   font-size: 2rem;
+  text-align: center;
 }
 
 .tagline {
@@ -75,11 +88,13 @@ a:focus {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  text-align: center;
 }
 
 .nav-list a {
   color: #ffffff;
   font-weight: 600;
+  text-align: center;
 }
 
 .nav-list a:hover,
